@@ -1,0 +1,18 @@
+p{
+    text-align: center;
+}
+h1{
+    text-align:center;
+}
+h4{
+    text-align:center;
+}
+.div2 
+{
+    width: 80%;
+    margin:auto;
+    height: 300px;    
+    padding: 50px;
+    border: light;
+    background-color:lightyellow;
+}

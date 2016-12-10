@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WDD2 Ca2</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>  
+      <li><a routerLink="/page-a" routerLinkActive="active">Temperature Converter</a></li>
+      <li><a routerLink="/page-b" routerLinkActive="active">BMI Calculator</a></li> 
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
