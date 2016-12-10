@@ -15,6 +15,7 @@ export class PageBComponent implements OnInit {
     }
 
   ngOnInit() {
+    
   }
 
 }

@@ -10,10 +10,35 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
 </head>
 <body>
   
   <app-root>Loading...</app-root>
-  
+
+  <script>
+var value = $(this).attr('id');
+
+function checkId(id){
+	value = id;
+}
+
+function converts(id){
+	var x;
+	id = value;
+	if (id == "celcius") {
+        x = document.getElementById("celcius").value * 9 / 5 + 32;
+        document.getElementById("fahrenheit").value = Math.round(x);
+		
+	} else{
+        x = (document.getElementById("fahrenheit").value -32) * 5 / 9;
+        document.getElementById("celcius").value = Math.round(x);
+		
+	}
+	
+}
+
+
+</script>
 </body>
 </html>
