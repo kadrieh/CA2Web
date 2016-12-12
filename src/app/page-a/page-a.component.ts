@@ -15,6 +15,7 @@ export class PageAComponent implements OnInit {
     }
 
   ngOnInit() {
+    
   }
 
 }

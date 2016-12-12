@@ -1,5 +1,46 @@
-<p>You're on the second page!</p>
- 
-<p>
-    <a (click)="goBack()">Go Back via TypeScript</a> | <a [routerLink]="['/']">Go Back via Markup</a>
-</p>
+<div id="container">
+    <h1>BMI Calcualtor</h1>
+    <h3>Enter your Weight</h3>
+    
+    <div class="col-xs-4">
+        <p><label>Stone</label>
+            <input class="form-control" id="ex1" type="text"></p>
+    </div>
+
+    <div class="col-xs-4">
+       <p> <label>Pounds</label>
+            <input class="form-control" id="ex2" type="text"></p>
+    </div>
+
+    <div class="col-xs-4">
+        <p><label>or KGs</label>
+            <input class="form-control" id="ex3" type="text"></p>
+    </div>
+    <h3> And Your Height</h3>
+
+    <div class="col-xs-4">
+        <p><label>Feet</label>
+            <input class="form-control" id="ex1" type="text"></p>
+    </div>
+
+    <div class="col-xs-4">
+        <p><label >Inches</label>
+            <input class="form-control" id="ex2" type="text"></p>
+    </div>
+
+    <div class="col-xs-4">
+        <p><label >or Meters</label>
+            <input class="form-control" id="ex3" type="text">
+    </div>
+           
+  <button type="button" class="btn btn-info btn-lg">Calculate BMI</button>      
+
+<p>Enter your weight either in stone/pounds or kilograms and your height either in feet/inches or meters</p> 
+<h5><p>Result:</p></h5>
+    <div class="col-xs-12">
+            <input class="form-control" id="ex2" type="text">
+    </div>
+         
+   
+   
+</div><!--close container-->

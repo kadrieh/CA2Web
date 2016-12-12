@@ -9,10 +9,11 @@ h4{
 }
 .div2 
 {
-    width: 80%;
+    width: 60%;
     margin:auto;
     height: 300px;    
     padding: 50px;
     border: light;
-    background-color:lightyellow;
+    background-color:#f4f4f4;
+    border-radius:2%;
 }
