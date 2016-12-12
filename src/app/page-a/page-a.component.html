@@ -2,19 +2,17 @@
 
   <div class="container">
       <h2>Temperature Unit Convertor</h2>
-            <form >
                 <p>Celcius<br />
-                <input onclick="checkId(id)"  id="celcius"  placeholder="Enter a number">
+                <input class ="form-control" [(ngModel)]="celcius" id="celcius" (click)="checkId('c')"  placeholder="Enter a number">
                 </p>
 
                 <p>Fahrenheit<br />
-                <input   onclick="checkId(id)"  id="fahrenheit" placeholder="Enter a number">
+                <input class ="form-control" [(ngModel)]="fahrenheit" (click)="checkId('f')"  id="fahrenheit" placeholder="Enter a number">
                 </p>
 
-            <button type="button" class="btn btn-primary" onclick="converts()">convert</button> 
+            <button type="submit" class="btn btn-primary" (click)="converts()">convert</button> 
+    
             <br />
-            <br />
-            <p>Total conversion: <span id="counter">0</span></p>
-    </form>
+            <p>Total conversion: <span id="counter">{{counter}}</span></p>
    </div>
    

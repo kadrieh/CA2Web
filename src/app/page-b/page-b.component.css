@@ -6,6 +6,14 @@ h3
 {
     text-align:center;
 }
+.col-xs-12 h3
+{
+    width:100%;
+    height:25%;
+    border-style:groove;
+    padding:20px;
+    border-radius:5px;
+}
 #container
 {
     width:55%;
@@ -44,8 +52,8 @@ p{
     width:100%;
     float:left;
 }
-h5 p{
-    float:left;
+h4
+{
+    font-weight:bold;
     margin-left:15px;
-    font-weight:bold; 
 }

@@ -16,6 +16,7 @@
   
   <app-root>Loading...</app-root>
 
+<!--
   <script>
 var value = $(this).attr('id');
 var counter = 0;
@@ -39,6 +40,32 @@ function converts(id){
   document.getElementById("counter").innerHTML = counter;
 }
 
-</script>
+//comment
+
+
+
+function BMRCalculate () {
+  var feet = $('#feet').val(); // e.g 5
+  var inches = $('#inches').val(); // e.g 3
+  var stone = $('#stone').val(); // e.g 13
+  var pounds = $('#pounds').val(); // e.g 4
+  var imperialCalc = ((stone*14)+pounds)/((feet*12+inches)*(feet*12+inches))*703; // BMI Formula
+  console.log(imperialCalc.toFixed(1)); // e.g 32.9
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script-->
+
 </body>
 </html>

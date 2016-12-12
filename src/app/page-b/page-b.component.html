@@ -1,44 +1,49 @@
 <div id="container">
     <h1>BMI Calcualtor</h1>
     <h3>Enter your Weight</h3>
-    
+
     <div class="col-xs-4">
         <p><label>Stone</label>
-            <input class="form-control" id="ex1" type="text"></p>
+            <input class="form-control" [(ngModel)]="stone" id="stone" (keyup)="convertW('stone')" type="text"></p>
     </div>
 
     <div class="col-xs-4">
        <p> <label>Pounds</label>
-            <input class="form-control" id="ex2" type="text"></p>
+            <input class="form-control" [(ngModel)]="pounds" id="pounds" (keyup)="convertW('pound')" type="text"></p>
     </div>
 
     <div class="col-xs-4">
         <p><label>or KGs</label>
-            <input class="form-control" id="ex3" type="text"></p>
+            <input class="form-control" [(ngModel)]="kilo" id="kilo" (keyup)="convertW('kilo')" type="text"></p>
     </div>
     <h3> And Your Height</h3>
 
     <div class="col-xs-4">
         <p><label>Feet</label>
-            <input class="form-control" id="ex1" type="text"></p>
+            <input class="form-control" [(ngModel)]="feet" id="feet" (keyup)="convertH('feet')" type="text"></p>
     </div>
 
     <div class="col-xs-4">
         <p><label >Inches</label>
-            <input class="form-control" id="ex2" type="text"></p>
+            <input class="form-control" [(ngModel)]="inches" id="inches" (keyup)="convertH('inches')"type="text"></p>
     </div>
 
     <div class="col-xs-4">
         <p><label >or Meters</label>
-            <input class="form-control" id="ex3" type="text">
+            <input class="form-control" [(ngModel)]="metres" id="metres" (keyup)="convertH('metres')" type="text">
     </div>
-           
-  <button type="button" class="btn btn-info btn-lg">Calculate BMI</button>      
+
+  
+
+  <button type="button" class="btn btn-info btn-lg" (click)=BMRCalculate()>Calculate BMI</button>      
 
 <p>Enter your weight either in stone/pounds or kilograms and your height either in feet/inches or meters</p> 
-<h5><p>Result:</p></h5>
+
+<h4>Result:</h4>
     <div class="col-xs-12">
-            <input class="form-control" id="ex2" type="text">
+              <h3>{{result}}
+              <span [style.color] ="getColor()">{{result2}}</span>  
+              </h3>     
     </div>
          
    
