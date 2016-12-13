@@ -8,32 +8,31 @@ import { Location } from "@angular/common";
 })
 export class PageBComponent implements OnInit {
 
-  //heightchoice
-  hchoice:string = "";
-  //weightchoice
-  wchoice: string = "";
-  //weight
+  height:string = "";
+
+  weight: string = "";
+
   stone: number = 0;
   pounds: number = 0;
   kilo: number = 0;
-  //height
+
   feet: number = 0;
   inches: number = 0;
   metres: number = 0;
-  //result
+
   bmi: number = 0;
-  result: string = "";
+  result1: string = "";
   result2: string = "";
 
 
   constructor() { }
 
   convertH(id){
-    this.hchoice = id
+    this.height = id
     
-    if (this.hchoice === "feet"){
+    if (this.height === "feet"){
        this.metres = this.feet * 0.3048;
-    }else if(this.hchoice === "inches"){
+    }else if(this.height === "inches"){
       this.metres += this.inches*0.0254;
       this.metres = this.twoDecPlace(this.metres);
     }else
@@ -49,10 +48,10 @@ export class PageBComponent implements OnInit {
   //converting Weights
   convertW(id){
     
-    this.wchoice = id;
-    if (this.wchoice === "stone"){
+    this.weight = id;
+    if (this.weight === "stone"){
        this.kilo = this.stone * 6.3503;
-    }else if(this.wchoice === "pound"){
+    }else if(this.weight === "pound"){
       this.kilo += this.pounds * 0.4536;
     }else{
        this.stone = this.kilo / 6.3503;
@@ -73,13 +72,13 @@ export class PageBComponent implements OnInit {
     this.bmi = this.twoDecPlace(this.bmi);
   
     if(this.bmi < 18){
-      this.result = "Your estimated BMI is " + this.bmi + ", this is in the ";
+      this.result1 = "Your estimated BMI is " + this.bmi + ", this is in the ";
       this.result2 = "Underweight Range";
     }else if(this.bmi >=18 && this.bmi <= 25){
-      this.result = "Your estimated BMI is " + this.bmi + ", this is in the ";
+      this.result1 = "Your estimated BMI is " + this.bmi + ", this is in the ";
       this.result2 = "Normal Range";
     }else{
-      this.result = "Your estimated BMI is " + this.bmi + ", this is in the ";
+      this.result1 = "Your estimated BMI is " + this.bmi + ", this is in the ";
       this.result2 = "Overweight Range";
     }
   }
